@@ -1,3 +1,25 @@
+在DHCP模式下的路由器里面，大家公用一个IP地址会出问题，会出现类似于：
+
+{u'client_ip': u'101.6.140.40',
+ u'ecode': u'E2833',
+ u'error': u'login_error',
+ u'error_msg': u'E2833: Your IP address is not in the dhcp table. Maybe you need to renew the IP address.',
+ u'online_ip': u'',
+ u'res': u'login_error',
+ u'srun_ver': u'SRunCGIAuthIntfSvr V1.18 B20180410',
+ u'st': 1534126570}
+{u'balance': u'4.500000',
+ u'cumulative_incoming': 16906485814,
+ u'cumulative_time': 1029154,
+ u'ipv4_address': u'101.6.140.40',
+ u'session_incoming': 0,
+ u'session_outgoing': 0,
+ u'time_login': 1534126562,
+ u'time_query': 1534126571,
+ u'username': u'2015412051'}
+
+所以有些问题； 
+
 # tunet-python
 
 TUNet 2018 认证协议的纯 python 实现，含 auth4 / auth6 / net 认证。适用于服务器在无人交互时自动认证。
